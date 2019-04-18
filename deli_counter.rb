@@ -24,3 +24,4 @@ def line(array)
     array.shift
   end
 end
+end 
