@@ -11,4 +11,16 @@ def line(array)
     puts "The line is currently: #{new_array.join(" ")}"
   end
 
-line(katz_deli)
+  def take_a_number(array, name)
+    array.push(name)
+    puts "Welcome, #{name}. You are number #{array.length} in line."
+  end
+
+  def now_serving(array)
+  if array.empty? == true
+    puts "There is nobody waiting to be served!"
+  else array.empty? == false
+    puts "Currently serving #{array[0]}."
+    array.shift
+  end
+end
